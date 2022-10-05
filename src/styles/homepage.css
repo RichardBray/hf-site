@@ -87,18 +87,19 @@
 
   .platform-logos-home img {
     padding: 10px;
-    /* .opacityAll(.7);
-    .hover-scale-fx(1.1);
-    .grayscale(); */
+    opacity: .7;
+    filter: gray;
+    -webkit-filter: grayscale(100%);
+    transition: all .1s ease-in-out;
   }
 
   .platform-logos-home img:hover {
-    /* .opacityAll(1);
-    .nograyscale(); */
+    opacity: 1;
+    transform: scale(1.1);
   }
 
   .platform-demos-home img {
-    /* .hover-scale-fx(1.1); */
+    transform: scale(1.1);
     padding: 10px;
   }
 
@@ -133,9 +134,10 @@
     } */
   }
 
-  .home-section-powered span {
+  .plus-sign {
     font-size: 48px;
     padding: 20px;
+    font-weight: bold;
   }
 
   .patreon-home  img {
@@ -188,4 +190,12 @@
     .sponsor-logos-container {
         flex-direction: column;
     }
+  }
+
+  .demo-img-section {
+    display: grid;
+    grid-gap: 0 20px;
+    grid-template-columns: 160px 160px 160px;
+    margin: auto;
+    max-width: 520px;
   }

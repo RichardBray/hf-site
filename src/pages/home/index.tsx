@@ -2,8 +2,18 @@ import Head from "next/head";
 import Image from "next/future/image";
 import Link from "next/link";
 import Layout from "src/components/Layout";
+import Script from "next/script";
 
 import haxeFlixelImg from "$images/haxeflixel.svg";
+import windowsLogo from "$images/targets/windows-logo.svg";
+import linuxLogo from "$images/targets/linux-logo.svg";
+import appleLogo from "$images/targets/apple-logo.svg";
+import androidLogo from "$images/targets/android-logo.svg";
+import iosLogo from "$images/targets/ios-logo.png";
+import flashLogo from "$images/targets/flash-logo.svg";
+import html5Logo from "$images/targets/html5-logo.svg";
+
+import { demoData } from "$data/demos";
 
 import type { NextPage } from "next";
 
@@ -68,23 +78,7 @@ const Home: NextPage = () => (
             Follow @haxeflixel
           </a>
 
-          {/* <Script
-        id="twitter-js"
-        src="https://js.stripe.com/v3/"
-        onLoad={() => {
-          !function (d, s, id)
-            {
-                var js, fjs = d.getElementsByTagName (s)[0];
-                if (!d.getElementById (id))
-                {
-                    js = d.createElement (s);
-                    js.id = id;
-                    js.src = "//platform.twitter.com/widgets.js";
-                    fjs.parentNode.insertBefore (js, fjs);
-                }
-            } (document, "script", "twitter-wjs");
-        }}
-      /> */}
+          <Script id="twitter-follow-badge" src="https://platform.twitter.com/widgets.js" />
 
           <br />
           <a href="https://discordapp.com/invite/rqEBAgF">
@@ -102,21 +96,52 @@ const Home: NextPage = () => (
 
         <hr className="backer-hr" />
 
-        <div className="home-section">
+        <section className="home-section">
           <p className="lead-line-large">
             Cross-compile your games <a href="documentation/about">natively</a> to:
           </p>
 
-          {/* <div className="platform-logos-home">
-            <Image width={80} height={80} src="images/targets/windows-logo.svg" alt="Windows" title="Windows" />
-            <Image width={80} height={85} src="images/targets/linux-logo.svg" alt="Linux" title="Linux" />
-            <Image width={80} height={85} src="images/targets/apple-logo.svg" alt="Mac" title="Mac" />
-            <Image width={80} height={85} src="images/targets/android-logo.svg" alt="Android" title="Android" />
-            <Image width={100} height={85} src="images/targets/ios-logo.png" alt="iOS" title="iOS" />
-            <Image width={80} height={80} src="images/targets/flash-logo.svg" alt="Flash" title="Flash" />
-            <Image width={85} height={85} src="images/targets/html5-logo.svg" alt="HTML5" title="HTML5" />
-          </div> */}
-        </div>
+          <div className="platform-logos-home">
+            <Image width={80} height={80} src="/images/targets/windows-logo.svg" alt="Windows" title="Windows" />
+            <Image width={80} height={85} src={linuxLogo} alt="Linux" title="Linux" />
+            <Image width={80} height={85} src={appleLogo} alt="Mac" title="Mac" />
+            <Image width={80} height={85} src={androidLogo} alt="Android" title="Android" />
+            <Image width={100} height={64} src={iosLogo} alt="iOS" title="iOS" />
+            <Image width={80} height={80} src={flashLogo} alt="Flash" title="Flash" />
+            <Image width={85} height={85} src={html5Logo} alt="HTML5" title="HTML5" />
+          </div>
+        </section>
+        <hr />
+        <section className="demos-home home-section">
+          <p className="lead-line-large">
+            Browse and learn from our <a href="/demos">{demoData.length} demos</a>:
+          </p>
+          <div className="demo-img-section">
+            {demoData.map((demo, idx) => (
+              <Image
+                key={idx}
+                width={160}
+                height={160}
+                src={`/images/demos/${demo.title}.png`}
+                alt={demo.title}
+                title={demo.title}
+              />
+            ))}
+          </div>
+        </section>
+        <hr />
+        <section className="home-section-powered">
+          <p className="lead-line-large">Powered by open source cross-platform tech:</p>
+          <br />
+
+          <Image src="/images/haxe.svg" alt="Haxe Logo" height="120" width="120" />
+          <span className="plus-sign">+</span>
+          <Image src="/images/openfl.svg" alt="OpenFL Logo" height="120" width="120" />
+          <span className="plus-sign">+</span>
+          <Image src="/images/flixel.svg" alt="Haxe Logo" height="120" width="120" />
+          <span className="plus-sign">=</span>
+          <Image src="/images/haxeflixel.svg" alt="Haxe Logo" height="120" width="120" />
+        </section>
       </div>
     </main>
   </Layout>

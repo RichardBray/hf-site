@@ -16,6 +16,7 @@
       "$components/*": ["src/components/*"],
       "$styles/*": ["src/styles/*"],
       "$images/*": ["public/images/*"],
+      "$data/*": ["src/data/*"],
     },
     "resolveJsonModule": true,
     "skipLibCheck": true,

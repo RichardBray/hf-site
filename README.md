@@ -38,7 +38,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ## TODOs
 
-- Remove homepage global css
-- Gap between badges on homnepage
-- Width of the homepage
 - Fix twitter badge
+- Remove homepage global css
+- Gap between badges on homepage
+- Width of the homepage
