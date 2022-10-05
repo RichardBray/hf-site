@@ -12,9 +12,9 @@
     "moduleResolution": "node",
     "noEmit": true,
     "paths": {
-      "$pages/*": ["pages/*"],
-      "$components/*": ["components/*"],
-      "$styles/*": ["styles/*"],
+      "$pages/*": ["src/pages/*"],
+      "$components/*": ["src/components/*"],
+      "$styles/*": ["src/styles/*"],
       "$images/*": ["public/images/*"],
     },
     "resolveJsonModule": true,

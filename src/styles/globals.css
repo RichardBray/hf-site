@@ -1,8 +1,10 @@
-body {
-  background-image: url(/images/highlight-bg.png), url(/images/site-bg.png);
-  background-repeat: no-repeat, repeat;
-  background-position: center top, left top;
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic);
+
+body, h1 {
+  background-color: #E0E9E7;
+  font-family: 'Ubuntu',sans-serif;
 }
+
 a {
   text-decoration: none;
   transition: all 0.25s ease 0s;
