@@ -107,7 +107,7 @@ const Home: NextPage = () => (
             Cross-compile your games <a href="documentation/about">natively</a> to:
           </p>
 
-          <div className="platform-logos-home">
+          {/* <div className="platform-logos-home">
             <Image width={80} height={80} src="images/targets/windows-logo.svg" alt="Windows" title="Windows" />
             <Image width={80} height={85} src="images/targets/linux-logo.svg" alt="Linux" title="Linux" />
             <Image width={80} height={85} src="images/targets/apple-logo.svg" alt="Mac" title="Mac" />
@@ -115,7 +115,7 @@ const Home: NextPage = () => (
             <Image width={100} height={85} src="images/targets/ios-logo.png" alt="iOS" title="iOS" />
             <Image width={80} height={80} src="images/targets/flash-logo.svg" alt="Flash" title="Flash" />
             <Image width={85} height={85} src="images/targets/html5-logo.svg" alt="HTML5" title="HTML5" />
-          </div>
+          </div> */}
         </div>
       </div>
     </main>
