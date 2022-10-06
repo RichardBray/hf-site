@@ -6,6 +6,11 @@ Haxeflixel.com site
 - Typescript
 - MDX
 - Bootstrap 3
+- CSS Modules
+
+## Resources
+
+- Ubuntu font from Google Fonts in global.css file
 
 ## Getting Started
 
@@ -37,8 +42,3 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 
 ## TODOs
-
-- Fix twitter badge
-- Remove homepage global css
-- Gap between badges on homepage
-- Width of the homepage
