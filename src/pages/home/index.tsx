@@ -35,7 +35,7 @@ const Home: NextPage = () => (
       <title>Beta | Home | HaxeFlixel 2D Game Engine</title>
     </Head>
 
-    <main className=" container">
+    <div className=" container">
       <section className={`${styles["home-header"]} ${styles["home-section"]}`}>
         <Link href="documentation/about">
           <a className={styles["home-big-logo"]} title="About HaxeFlixel">
@@ -214,7 +214,7 @@ const Home: NextPage = () => (
           See all our Sponsors
         </a>
       </section>
-    </main>
+    </div>
   </>
 );
 

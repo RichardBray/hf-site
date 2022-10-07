@@ -9,9 +9,9 @@ A demo showing off the capabilites of [FlxCaveGenerator](https://github.com/Haxe
 
 Generating a cave for a FlxTilemap is really simple:
 
-```haxe
+---haxe
 var caveData:String = FlxCaveGenerator.generateCaveString(Width, Height, SmoothingIterations, WallRatio);
-```
+---
 
 The String generated can be used directly in FlxTilemap's `loadMap()` method.
 

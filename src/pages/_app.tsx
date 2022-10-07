@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 
 import "$styles/vendor/bootstrap.css";
+import "$styles/footer.css";
 import "$styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {

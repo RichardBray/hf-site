@@ -1,14 +1,12 @@
 import Image from "next/future/image";
 import Script from "next/script";
 
-import styles from "$components/Footer/Footer.module.css";
-
 export default function Footer(): JSX.Element {
   return (
-    <footer className={styles["footer"]}>
-      <div className={styles["footer-main"]}>
+    <footer className="footer">
+      <div className="footer-main">
         <div className=" container">
-          <div className={styles["footer-social"]}>
+          <div className="footer-social">
             <iframe
               width="120px"
               scrolling="0"
@@ -29,7 +27,7 @@ export default function Footer(): JSX.Element {
             <Script id="twitter-follow-badge" src="https://platform.twitter.com/widgets.js" />
 
             <a
-              className={styles["footer-patreon"]}
+              className="footer-patreon"
               href="https://www.patreon.com/haxeflixel"
               title="Support us on Patreon"
             >
@@ -43,7 +41,7 @@ export default function Footer(): JSX.Element {
             </a>
           </div>
 
-          <div className={styles["footer-powered-by"]}>
+          <div className="footer-powered-by">
             <p>HaxeFlixel is powered by</p>
             <a href="http://haxe.org">
               <Image src="/images/haxe.svg" alt="Haxe" title="Haxe" width="40" height="40" />

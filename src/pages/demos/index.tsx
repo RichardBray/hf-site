@@ -2,13 +2,15 @@ import Link from "next/link";
 import Image from "next/future/image";
 
 import styles from "$pages/demos/demos.module.css";
-import getAllFilesInFolder from "$services/getAllFilesInFolder";
+import {getAllFilesInFolder} from "$services/fileService";
+import { FILE_PATHS } from "src/constants";
 
 import type { NextPage } from "next";
 
 type DemoPageProps = {
   demoFiles: string[];
 };
+
 const Demos: NextPage<DemoPageProps> = ({ demoFiles }) => (
   <>
     <div className="container container-main">
@@ -21,8 +23,8 @@ const Demos: NextPage<DemoPageProps> = ({ demoFiles }) => (
         id="githubBtn-tr-info"
         className={styles["githubBtn-tr-info"]}
         src="https://ghbtns.com/github-btn.html?user=haxeflixel&amp;repo=flixel-demos&amp;type=watch&amp;count=true&amp;size=large"
-      ></iframe>
-      <section className={`${styles["demo-page"]} center-align-a`}>
+      />
+      <section className="center-align-a">
         {demoFiles.map((demoFile, idx) => (
           <Link key={idx} href={`/demos/${demoFile}`}>
             <a>
@@ -43,7 +45,7 @@ const Demos: NextPage<DemoPageProps> = ({ demoFiles }) => (
 );
 
 export async function getStaticProps() {
-  const demoFiles = await getAllFilesInFolder("./src/pages/demos/_documents/");
+  const demoFiles = await getAllFilesInFolder(FILE_PATHS.demos);
 
   return {
     props: {

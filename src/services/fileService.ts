@@ -1,9 +1,8 @@
 import { promises } from "node:fs";
 import { resolve } from "node:path";
 
-export default async function getAllFilesInFolder(folder: string): Promise<string[]> {
+export async function getAllFilesInFolder(folder: string): Promise<string[]> {
   const folderPath = relativeToAbsolutePath(folder);
-
   try {
     const files = await promises.readdir(folderPath);
     return removeFileExtentions(files);
