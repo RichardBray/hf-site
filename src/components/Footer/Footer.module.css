@@ -6,21 +6,8 @@
 }
 
 .footer:before {
-  background-image: -webkit-linear-gradient(
-    left,
-    #ffdb2d 0%,
-    #ffdb2d 20%,
-    #e30019 20%,
-    #e30019 40%,
-    #9cb641 40%,
-    #9cb641 60%,
-    #1a2eef 60%,
-    #1a2eef 80%,
-    #00abf3 80%,
-    #00abf3 100%
-  );
-  background: -moz-linear-gradient(
-    left center,
+  background: linear-gradient(
+    to right,
     #ffdb2d 0%,
     #ffdb2d 20%,
     #e30019 20%,

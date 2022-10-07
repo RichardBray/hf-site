@@ -3,19 +3,14 @@ import Image from "next/future/image";
 
 import hfHeaderImg from "$images/haxeflixel-header.png";
 
-const css = { width: '169px', height: '30px' }
+const css = { width: "169px", height: "30px" };
 
 export default function Navbar() {
   return (
     <div className="navbar navbar-inverse navbar-fixed-top">
       <div className="container">
         <div className="navbar-header">
-          <button
-            data-target=".navbar-collapse"
-            data-toggle="collapse"
-            className="navbar-toggle"
-            type="button"
-          >
+          <button data-target=".navbar-collapse" data-toggle="collapse" className="navbar-toggle" type="button">
             <span className="icon-bar" />
             <span className="icon-bar" />
             <span className="icon-bar" />
@@ -51,15 +46,21 @@ export default function Navbar() {
             </li>
 
             <li>
-              <a href="/showcase">Showcase</a>
+              <Link href="/showcase">
+                <a>Showcase</a>
+              </Link>
             </li>
 
             <li>
-              <a href="/blog">Blog</a>
+              <Link href="/blog">
+                <a>Blog</a>
+              </Link>
             </li>
 
             <li>
-              <a href="/documentation">Docs</a>
+              <Link href="/documentation">
+                <a>Docs</a>
+              </Link>
             </li>
 
             <li>
@@ -67,9 +68,7 @@ export default function Navbar() {
             </li>
 
             <li>
-              <a href="https://github.com/HaxeFlixel/flixel/discussions">
-                Forum
-              </a>
+              <a href="https://github.com/HaxeFlixel/flixel/discussions">Forum</a>
             </li>
           </ul>
         </div>

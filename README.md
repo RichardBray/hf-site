@@ -5,8 +5,10 @@ Haxeflixel.com site
 - Next.js
 - Typescript
 - MDX
-- Bootstrap 3
+- Bootstrap 3.3.7
 - CSS Modules
+- Jquery 1.12.4
+- Gray matter - https://github.com/jonschlinkert/gray-matter
 
 ## Resources
 
@@ -42,3 +44,5 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 
 ## TODOs
+- 404 page
+- Nav search input

@@ -1,8 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic);
 
-body, h1 {
-  background-color: #E0E9E7;
-  font-family: 'Ubuntu',sans-serif;
+body,
+h1 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background-color: #e0e9e7;
 }
 
 a {
@@ -12,14 +16,15 @@ a {
 a:hover {
   text-decoration: none;
 }
-a, object {
+a,
+object {
   outline: 0;
 }
 hr {
   border-color: lightgray;
 }
 blockquote {
-  background-color: #F8F9FF;
+  background-color: #f8f9ff;
 }
 .members-list img {
   max-width: 40px;
@@ -71,10 +76,10 @@ h3:before {
 .inverse-dropdown.divider {
   background-color: #000 !important;
 }
-.inverse-dropdown>li>a {
+.inverse-dropdown > li > a {
   color: #9d9d9d !important;
 }
-.inverse-dropdown>li>a:hover {
+.inverse-dropdown > li > a:hover {
   color: #fff !important;
   background-color: #000 !important;
 }
@@ -117,8 +122,19 @@ h3:before {
   padding-bottom: 14px;
 }
 .title:before {
-  background-image: -webkit-linear-gradient(left,#ffdb2d 0%,#ffdb2d 20%,#e30019 20%,#e30019 40%,#9CB641 40%,#9CB641 60%,#1a2eef 60%,#1a2eef 80%,#00abf3 80%,#00abf3 100%);
-  background-image: -moz-linear-gradient(left center,#ffdb2d 0%,#ffdb2d 20%,#e30019 20%,#e30019 40%,#9CB641 40%,#9CB641 60%,#1a2eef 60%,#1a2eef 80%,#00abf3 80%,#00abf3 100%);
+  background: linear-gradient(
+    to right,
+    #ffdb2d 0%,
+    #ffdb2d 20%,
+    #e30019 20%,
+    #e30019 40%,
+    #9cb641 40%,
+    #9cb641 60%,
+    #1a2eef 60%,
+    #1a2eef 80%,
+    #00abf3 80%,
+    #00abf3 100%
+  );
   bottom: -6px;
   content: "";
   height: 4px;
@@ -143,7 +159,7 @@ pre .title:before {
   margin-top: 24px;
   margin-bottom: 150px;
   background: #ffffff;
-  border: 1px solid #D0D0D0;
+  border: 1px solid #d0d0d0;
   border-radius: 10px;
   min-height: 820px;
   padding: 16px;
@@ -172,11 +188,12 @@ code {
   padding-bottom: 0.2em;
   margin: 0;
   font-size: 85%;
-  background-color: rgba(27,31,35,0.05);
+  background-color: rgba(27, 31, 35, 0.05);
   border-radius: 3px;
   border: 0px;
 }
-code:not(.hljs)::before, code:not(.hljs)::after {
+code:not(.hljs)::before,
+code:not(.hljs)::after {
   letter-spacing: -0.2em;
   content: "\00a0";
 }
