@@ -197,3 +197,10 @@ code:not(.hljs)::after {
   letter-spacing: -0.2em;
   content: "\00a0";
 }
+
+.githubBtn-tr-info {
+  float: right;
+  margin-top: -60px;
+  position: relative;
+  z-index: 99;
+}

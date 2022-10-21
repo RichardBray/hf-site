@@ -34,15 +34,16 @@ export default function Demo({ frontMatter, html, prevDemo, nextDemo }: DemoInpu
       </div>
       <div className="container-main-content">
         <div className="demo-content">
-          <h1 className="title" style={{marginTop: "3rem"}}>{frontMatter.title}</h1>
+          <h1 className="title" style={{ marginTop: "3rem" }}>
+            {frontMatter.title}
+          </h1>
           <a
             href={`https://github.com/HaxeFlixel/flixel-demos/tree/master/${frontMatter.title}/source`}
             target="_blank"
             rel="noreferrer"
             style={{ float: "right" }}
           >
-            <span className="glyphicon glyphicon-book" />
-            {" "}source code
+            <span className="glyphicon glyphicon-book" /> source code
           </a>
 
           <MDXRemote {...html} />
@@ -78,23 +79,28 @@ export async function getStaticPaths() {
   return { paths, fallback: false };
 }
 
-export async function getStaticProps({ params }: { params: { demo: string; prevDemo: string; nextDemo: string } }) {
-  const demoFiles = await getAllFilesInFolder(FILE_PATHS.demos);
-  const currentDemoIndex = demoFiles.indexOf(params.demo);
-  const lastDemo = demoFiles[demoFiles.length - 1];
-  const firstDemo = demoFiles[0];
-  const prevDemo = currentDemoIndex === 0 ? lastDemo : demoFiles[currentDemoIndex - 1];
-  const nextDemo = currentDemoIndex === demoFiles.length - 1 ? firstDemo : demoFiles[currentDemoIndex + 1];
+export async function getStaticProps({ params }: { params: { demo: string } }) {
+  try {
+    const selectedDemo = params.demo;
+    const demoFiles = await getAllFilesInFolder(FILE_PATHS.demos);
+    const currentDemoIndex = demoFiles.indexOf(selectedDemo);
+    const lastDemo = demoFiles[demoFiles.length - 1];
+    const firstDemo = demoFiles[0];
+    const prevDemo = currentDemoIndex === 0 ? lastDemo : demoFiles[currentDemoIndex - 1];
+    const nextDemo = currentDemoIndex === demoFiles.length - 1 ? firstDemo : demoFiles[currentDemoIndex + 1];
 
-  const { frontMatter, content } = getParsedFileContent(params.demo, FILE_PATHS.demos);
-  const renderedHTML = await markdownToHTML(content);
+    const { frontMatter, content } = getParsedFileContent(selectedDemo, FILE_PATHS.demos);
+    const renderedHTML = await markdownToHTML(content);
 
-  return {
-    props: {
-      frontMatter,
-      html: renderedHTML,
-      prevDemo: String(prevDemo),
-      nextDemo: String(nextDemo),
-    },
-  };
+    return {
+      props: {
+        frontMatter,
+        html: renderedHTML,
+        prevDemo: String(prevDemo),
+        nextDemo: String(nextDemo),
+      },
+    };
+  } catch (error) {
+    console.error(`demo getStaticPaths Error: ${(error as Error).message}`);
+  }
 }

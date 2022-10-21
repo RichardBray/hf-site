@@ -1,4 +1,4 @@
-```
+---
 layout: showcase
 title: "The Enchanted Cave 2"
 flash: http://www.kongregate.com/games/DustinAux/the-enchanted-cave-2
@@ -9,4 +9,4 @@ mac: http://store.steampowered.com/app/368610
 linux: http://store.steampowered.com/app/368610
 steam: http://store.steampowered.com/app/368610
 website: http://dustinauxier.com/the-enchanted-cave-2
-```
+---

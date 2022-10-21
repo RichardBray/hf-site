@@ -9,7 +9,7 @@ type DemoPageProps = {
   demoFiles: string[];
 };
 
-function Demos({ demoFiles}: DemoPageProps): JSX.Element {
+function Demos({ demoFiles }: DemoPageProps): JSX.Element {
   return (
     <>
       <div className="container container-main">
@@ -19,8 +19,7 @@ function Demos({ demoFiles}: DemoPageProps): JSX.Element {
           scrolling="0"
           height="30px"
           frameBorder="0"
-          id="githubBtn-tr-info"
-          className={styles["githubBtn-tr-info"]}
+          className="githubBtn-tr-info"
           src="https://ghbtns.com/github-btn.html?user=haxeflixel&amp;repo=flixel-demos&amp;type=watch&amp;count=true&amp;size=large"
         />
         <section className="center-align-a">
