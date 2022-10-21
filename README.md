@@ -44,5 +44,7 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 
 ## TODOs
+- remove the @next/mdx
 - 404 page
 - Nav search input
+- add page titles

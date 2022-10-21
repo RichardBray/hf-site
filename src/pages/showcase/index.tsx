@@ -1,11 +1,10 @@
 import type { NextPage } from "next";
 
-import Layout from "src/components/Layout";
 
 const Showcase: NextPage = () => (
-  <Layout>
+  <div className="container container-main">
     <div>index</div>
-  </Layout>
+  </div>
 );
 
 export default Showcase;
