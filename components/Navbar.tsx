@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/future/image";
+import Image from "next/image";
 
 import hfHeaderImg from "$images/haxeflixel-header.png";
 
@@ -15,10 +15,8 @@ export default function Navbar() {
             <span className="icon-bar" />
             <span className="icon-bar" />
           </button>
-          <Link href="/">
-            <a className="navbar-brand">
-              <Image src={hfHeaderImg} style={css} alt="HaxeFlixel" />
-            </a>
+          <Link href="/" className="navbar-brand">
+            <Image src={hfHeaderImg} style={css} alt="HaxeFlixel" />
           </Link>
         </div>
 
@@ -37,7 +35,7 @@ export default function Navbar() {
               </a>
               <ul className="dropdown-menu inverse-dropdown">
                 <li>
-                  <a href="/demos">Demos</a>
+                  <Link href="/demos">Demos</Link>
                 </li>
                 <li>
                   <a href="https://snippets.haxeflixel.com/">Snippets</a>
@@ -46,21 +44,15 @@ export default function Navbar() {
             </li>
 
             <li>
-              <Link href="/showcase">
-                <a>Showcase</a>
-              </Link>
+              <Link href="/showcase">Showcase</Link>
             </li>
 
             <li>
-              <Link href="/blog">
-                <a>Blog</a>
-              </Link>
+              <Link href="/blog">Blog</Link>
             </li>
 
             <li>
-              <Link href="/documentation">
-                <a>Docs</a>
-              </Link>
+              <Link href="/documentation">Docs</Link>
             </li>
 
             <li>

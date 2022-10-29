@@ -1,12 +1,9 @@
-const nextMDX = require("@next/mdx");
-
-const withMDX = nextMDX();
-
-const nextConfig = {
+module.exports = {
   pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx"],
   images: {
-    domains: ['img.shields.io']
+    domains: ["img.shields.io"],
+  },
+  experimental: {
+    appDir: true,
   },
 };
-
-module.exports = withMDX(nextConfig);

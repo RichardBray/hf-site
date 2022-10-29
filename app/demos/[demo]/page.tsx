@@ -1,10 +1,10 @@
 import { MDXRemote } from "next-mdx-remote";
-import Image from "next/future/image";
+import Image from "next/image";
 
-import { getAllFilesInFolder } from "$services/fileService";
-import { getParsedFileContent, markdownToHTML } from "$services/markdownService";
+import { getAllFilesInFolder } from "services/fileService";
+import { getParsedFileContent, markdownToHTML } from "services/markdownService";
 
-import { FILE_PATHS } from "src/constants";
+import { FILE_PATHS } from "constants";
 
 import styles from "$pages/demos/demos.module.css";
 

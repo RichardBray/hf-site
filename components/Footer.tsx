@@ -1,4 +1,4 @@
-import Image from "next/future/image";
+import Image from "next/image";
 import Script from "next/script";
 
 export default function Footer(): JSX.Element {
@@ -24,7 +24,7 @@ export default function Footer(): JSX.Element {
             >
               Follow @haxeflixel
             </a>
-            <Script id="twitter-follow-badge" src="https://platform.twitter.com/widgets.js" />
+            {/* <Script id="twitter-follow-badge" src="https://platform.twitter.com/widgets.js" /> */}
 
             <a
               className="footer-patreon"

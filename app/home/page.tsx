@@ -1,9 +1,9 @@
 import Head from "next/head";
-import Image from "next/future/image";
+import Image from "next/image";
 import Link from "next/link";
 import Script from "next/script";
 
-import styles from "$pages/home/home.module.css";
+import styles from "./styles.module.css";
 
 import type { NextPage } from "next";
 
@@ -31,16 +31,14 @@ const HOMEPAGE_DEMOS = [
 
 const Home: NextPage = () => (
   <>
-    <Head>
+    {/* <Head>
       <title>Beta | Home | HaxeFlixel 2D Game Engine</title>
-    </Head>
+    </Head> */}
 
-    <div className=" container">
+    <div className="container">
       <section className={`${styles["home-header"]} ${styles["home-section"]}`}>
-        <Link href="documentation/about">
-          <a className={styles["home-big-logo"]} title="About HaxeFlixel">
-            <Image src="/images/haxeflixel.svg" width="200" height="200" alt="HaxeFlixel Logo" />
-          </a>
+        <Link href="documentation/about" className={styles["home-big-logo"]} title="About HaxeFlixel">
+          <Image src="/images/haxeflixel.svg" width="200" height="200" alt="HaxeFlixel Logo" />
         </Link>
         <h1>HaxeFlixel</h1>
 
@@ -90,7 +88,7 @@ const Home: NextPage = () => (
           Follow @haxeflixel
         </a>
 
-        <Script id="twitter-follow-badge" src="https://platform.twitter.com/widgets.js" />
+        {/* <Script id="twitter-follow-badge" src="https://platform.twitter.com/widgets.js" /> */}
 
         <br />
 
@@ -129,19 +127,17 @@ const Home: NextPage = () => (
 
       <section className={`${styles["demos-home"]} ${styles["home-section"]}`}>
         <p className={styles["lead-line-large"]}>
-          Browse and learn from our <Link href="/demos"><a>{TOTAL_DEMOS} demos</a></Link>:
+          Browse and learn from our <Link href="/demos">{TOTAL_DEMOS} demos</Link>:
         </p>
         {HOMEPAGE_DEMOS.map((demo, idx) => (
           <Link key={idx} href={`/demos/${demo.title}`}>
-            <a>
-              <Image
-                width={160}
-                height={160}
-                src={`/images/demos/${demo.title}.png`}
-                alt={demo.title}
-                title={demo.title}
-              />
-            </a>
+            <Image
+              width={160}
+              height={160}
+              src={`/images/demos/${demo.title}.png`}
+              alt={demo.title}
+              title={demo.title}
+            />
           </Link>
         ))}
       </section>

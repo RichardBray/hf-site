@@ -7,22 +7,48 @@
     "incremental": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "module": "esnext",
     "moduleResolution": "node",
     "noEmit": true,
     "paths": {
-      "$pages/*": ["src/pages/*"],
-      "$components/*": ["src/components/*"],
-      "$styles/*": ["src/styles/*"],
-      "$images/*": ["public/images/*"],
-      "$services/*": ["src/services/*"],
+      "$pages/*": [
+        "app/*"
+      ],
+      "$components/*": [
+        "components/*"
+      ],
+      "$styles/*": [
+        "styles/*"
+      ],
+      "$images/*": [
+        "public/images/*"
+      ],
+      "$services/*": [
+        "services/*"
+      ]
     },
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "es5"
+    "target": "es5",
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

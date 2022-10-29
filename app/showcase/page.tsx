@@ -1,8 +1,8 @@
-import Image from "next/future/image";
+import Image from "next/image";
 
-import { getAllFilesInFolder } from "$services/fileService";
-import { getParsedFileContent } from "$services/markdownService";
-import { FILE_PATHS } from "src/constants";
+import { getAllFilesInFolder } from "services/fileService";
+import { getParsedFileContent } from "services/markdownService";
+import { FILE_PATHS } from "constants";
 
 type ShowcasePagesProps = {
   showcaseFiles: any[];
