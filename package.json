@@ -14,6 +14,7 @@
   "dependencies": {
     "@mdx-js/loader": "^2.1.3",
     "@mdx-js/react": "^2.1.3",
+    "@next/font": "^13.0.2",
     "gray-matter": "^4.0.3",
     "next": "^13.0.0",
     "next-mdx-remote": "^4.1.0",

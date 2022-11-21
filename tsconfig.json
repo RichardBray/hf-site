@@ -16,7 +16,7 @@
     "moduleResolution": "node",
     "noEmit": true,
     "paths": {
-      "$pages/*": [
+      "$app/*": [
         "app/*"
       ],
       "$components/*": [

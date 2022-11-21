@@ -92,7 +92,7 @@ const Home: NextPage = () => (
 
         <br />
 
-        <a href="https://discordapp.com/invite/rqEBAgF">
+        {/* <a href="https://discordapp.com/invite/rqEBAgF">
           <Image
             src="https://img.shields.io/discord/162395145352904705.svg?logo=discord"
             alt="Discord"
@@ -102,7 +102,7 @@ const Home: NextPage = () => (
         </a>
         <a href="https://www.patreon.com/haxeflixel" style={{ marginLeft: "5px" }}>
           <Image src="https://img.shields.io/badge/donate-patreon-blue.svg" alt="Patreon" width="100" height="20" />
-        </a>
+        </a> */}
       </section>
 
       <hr />

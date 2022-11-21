@@ -1,11 +1,11 @@
 
 import { getAllFilesInFolder } from "services/fileService";
-import { FILE_PATHS } from "../../constants";
+import { FILE_PATHS } from "../constants";
 
-import DemoPage from './DemoPage';
+import Demos from './Demos';
 
 export default async function Index() {
   const demoFiles = await getAllFilesInFolder(FILE_PATHS.demos);
 
-  return <DemoPage demoFiles={demoFiles} />
+  return <Demos demoFiles={demoFiles} />
 }

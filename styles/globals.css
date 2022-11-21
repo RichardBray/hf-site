@@ -1,8 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic);
+/* @import url(https://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic); */
 
 body,
 h1 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "__Ubuntu_9318ce", sans-serif;
 }
 
 body {

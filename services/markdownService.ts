@@ -15,6 +15,6 @@ export function getParsedFileContent(fileName: string, filePath: string, fileExt
   };
 }
 
-export async function markdownToHTML(markdownContent: string) {
+export async function serialiseMarkdownContent(markdownContent: string) {
   return await serialize(markdownContent ?? "");
 }

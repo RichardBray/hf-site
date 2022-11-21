@@ -16,7 +16,7 @@ export default function Navbar() {
             <span className="icon-bar" />
           </button>
           <Link href="/" className="navbar-brand">
-            <Image src={hfHeaderImg} style={css} alt="HaxeFlixel" />
+            <Image src={hfHeaderImg} style={css} alt="HaxeFlixel" width="100" height="100" />
           </Link>
         </div>
 

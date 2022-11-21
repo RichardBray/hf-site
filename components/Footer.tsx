@@ -24,7 +24,7 @@ export default function Footer(): JSX.Element {
             >
               Follow @haxeflixel
             </a>
-            {/* <Script id="twitter-follow-badge" src="https://platform.twitter.com/widgets.js" /> */}
+            {/* <script async src="https://platform.twitter.com/widgets.js" /> */}
 
             <a
               className="footer-patreon"
