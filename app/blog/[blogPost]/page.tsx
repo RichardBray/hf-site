@@ -2,7 +2,7 @@ import { getAllFilesInFolder } from "services/fileService";
 import { getParsedFileContent, serialiseMarkdownContent } from "services/markdownService";
 
 import { FILE_PATHS } from "$app/constants";
-import { BlogPostParams } from "../types";
+import { BlogPostParams, BlogPostProps } from "../types";
 import BlogPost from "./BlogPost";
 
 export async function generateStaticParams() {
@@ -27,7 +27,7 @@ async function getBlogPostProps({ params }: BlogPostParams) {
 }
 
 export default async function Index(params: BlogPostParams) {
-  const props = await getBlogPostProps(params);
+  const props = await getBlogPostProps(params) as BlogPostProps;
 
   return <BlogPost frontMatter={props?.frontMatter} html={props?.html} />;
 }

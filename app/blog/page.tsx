@@ -6,7 +6,7 @@ import { FILE_PATHS } from "../constants";
 import { BlogPageProps } from "./types";
 import BlogPosts from "./BlogPosts";
 
-export async function getBlogProps(): Promise<{ blogFiles: BlogPageProps[] }> {
+async function getBlogProps(): Promise<{ blogFiles: BlogPageProps[] }> {
   const blogFiles = await getAllFilesInFolder(FILE_PATHS.blog);
 
   const blogPosts = blogFiles.map(formatPosts);

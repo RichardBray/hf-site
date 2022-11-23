@@ -4,7 +4,7 @@ import { FILE_PATHS } from "../constants";
 import type { SortedShowcaseFiles, ShowcasePagesProps} from "./types";
 import Showcase from "./Showcase";
 
-export async function getShowcaseProps() {
+async function getShowcaseProps() {
   const showcaseFiles = await getAllFilesInFolder(FILE_PATHS.showcase);
   const alphabeticalOrder = (a: string, b: string) => a.localeCompare(b);
   showcaseFiles.sort(alphabeticalOrder);

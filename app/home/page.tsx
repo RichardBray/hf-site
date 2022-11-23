@@ -5,8 +5,6 @@ import Script from "next/script";
 
 import styles from "./styles.module.css";
 
-import type { NextPage } from "next";
-
 const TOTAL_DEMOS = 80;
 const HOMEPAGE_DEMOS = [
   {
@@ -29,7 +27,7 @@ const HOMEPAGE_DEMOS = [
   },
 ];
 
-const Home: NextPage = () => (
+const Home = () => (
   <>
     {/* <Head>
       <title>Beta | Home | HaxeFlixel 2D Game Engine</title>
@@ -88,7 +86,7 @@ const Home: NextPage = () => (
           Follow @haxeflixel
         </a>
 
-        {/* <Script id="twitter-follow-badge" src="https://platform.twitter.com/widgets.js" /> */}
+        <Script id="twitter-follow-badge" src="https://platform.twitter.com/widgets.js" />
 
         <br />
 
