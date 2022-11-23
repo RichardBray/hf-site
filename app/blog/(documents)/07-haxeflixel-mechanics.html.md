@@ -16,11 +16,6 @@ Yeah, we've all been there! Wouldn't it be nice if there was some kind of intera
 
 Well, what if I told you that it *already exists*!?
 
-<object width="725" height="85" data="/images/blog/title-logo.swf" style="display: block !important;">
-    <param name="wmode" value="transparent">
-  <h1><img src="/images/blog/hfm-logo.svg" width="64" style="vertical-align:text-top;" alt="HaxeFlixel Logo"> HaxeFlixel Mechanics</h1>
-</object>
-
 A couple of years back now (wow, time flies!), I had the idea of putting together a website that would showcase a ton of little samples of HaxeFlixel code, along with a demonstration of that code in action. It took some time, but I was able to get a pretty good start on this thing, and I called it [*HaxeFlixel Mechanics*](https://github.com/HaxeFlixel/haxeflixel-mechanics).
 
 ![](/images/blog/hfscreen.png)

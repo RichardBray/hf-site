@@ -36,7 +36,7 @@ async function getDemoProps({ params }: DemoParams) {
   }
 }
 
-export default async function Post(params: DemoParams) {
+export default async function Index(params: DemoParams) {
   const props = await getDemoProps(params);
 
   return (

@@ -11,12 +11,12 @@ export default function Blog({ blogFiles }: { blogFiles: BlogPageProps[] }): JSX
           <h1 className="title">Blog</h1>
           {blogFiles.map((data) => (
             <>
-              <Link href={`/blog/${data.title}`}>
+              <Link href={`/blog/${data.filename}`}>
                 <h3>{data.title}</h3>
               </Link>
               <div className={`${styles["post-date"]} ${styles["post-date-preview"]}`}>{data.postDate}</div>
               <p>
-                {data.content} <Link href={`/blog/${data.title}`}> read more</Link>
+                {data.content} <Link href={`/blog/${data.filename}`}> read more</Link>
               </p>
               <hr />
             </>

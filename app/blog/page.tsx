@@ -19,9 +19,9 @@ export async function getBlogProps(): Promise<{ blogFiles: BlogPageProps[] }> {
 function formatPosts(blogFile: string) {
   const { frontMatter, content } = getParsedFileContent(blogFile, FILE_PATHS.blog);
   const contentString = removeMd(content);
-  const characterLimit = 150;
+  const characterLimit = 151;
 
-  return { ...frontMatter, content: truncateString(contentString, characterLimit) } as BlogPageProps;
+  return { ...frontMatter, content: truncateString(contentString, characterLimit), filename: blogFile } as BlogPageProps;
 }
 
 function truncateString(str: string, limit: number) {
