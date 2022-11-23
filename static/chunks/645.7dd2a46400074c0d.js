@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[645],{645:function(_){_.exports={style:{fontFamily:"'__Ubuntu_9318ce', '__Ubuntu_Fallback_9318ce'",fontWeight:400,fontStyle:"normal"},className:"__className_9318ce"}}}]);

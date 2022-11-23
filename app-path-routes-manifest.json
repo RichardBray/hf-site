@@ -1,0 +1,9 @@
+{
+  "/blog/[blogPost]/page": "/blog/[blogPost]",
+  "/blog/page": "/blog",
+  "/demos/[demo]/page": "/demos/[demo]",
+  "/demos/page": "/demos",
+  "/home/page": "/home",
+  "/page": "/",
+  "/showcase/page": "/showcase"
+}
