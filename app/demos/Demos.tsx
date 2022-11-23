@@ -2,10 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import styles from "./styles.module.css";
-
-type DemoFiles = {
-  demoFiles: string[];
-};
+import type { DemoFiles } from "./types";
 
 export default function Demos({ demoFiles }: DemoFiles) {
   return (

@@ -1,32 +1,9 @@
 import Card from "./components/Card";
 
-import styles from "./showcase.module.css";
+import styles from "./styles.module.css";
+import type * as Types from "./types";
 
-export type ShowcasePagesProps = {
-  showcaseFiles: Array<ShowcaseData>;
-};
-
-export interface ShowcaseData extends Partial<ShowcaseTargets> {
-  layout: string;
-  title: string;
-  featured: boolean;
-}
-
-type ShowcaseTargets = {
-  windows: string;
-  mac: string;
-  linux: string;
-  flash: string;
-  android: string;
-  website: string;
-  steam: string;
-  psvita: string;
-  ios: string;
-  ps4: string;
-  xbox: string;
-};
-
-export default function Showcase({ showcaseFiles }: ShowcasePagesProps): JSX.Element {
+export default function Showcase({ showcaseFiles }: Types.ShowcasePagesProps): JSX.Element {
   const sortedGames = showcaseFiles.reduce(
     (accumulator, currentValue) => {
       const featured = accumulator.featured;
@@ -41,8 +18,8 @@ export default function Showcase({ showcaseFiles }: ShowcasePagesProps): JSX.Ele
       featured: [],
       notFeatured: [],
     } as {
-      featured: ShowcaseData[];
-      notFeatured: ShowcaseData[];
+      featured: Types.ShowcaseData[];
+      notFeatured: Types.ShowcaseData[];
     }
   );
 
@@ -61,11 +38,18 @@ export default function Showcase({ showcaseFiles }: ShowcasePagesProps): JSX.Ele
 
         <div className="center-align-a">
           <div className={`row ${styles["showcase-grid"]}`}>
-            <div className={`col-md-4 ${styles["showcase-game"]}`}>
-              {sortedGames.featured.map((showcaseFile, idx) => (
-                <Card key={idx} data={showcaseFile} />
-              ))}
-            </div>
+            {sortedGames.featured.map((showcaseFile, idx) => (
+              <div key={idx} className={`col-md-6 ${styles["showcase-game"]}`}>
+                <Card data={showcaseFile} />
+              </div>
+            ))}
+          </div>
+          <div className={`row ${styles["showcase-grid"]}`}>
+            {sortedGames.notFeatured.map((showcaseFile, idx) => (
+              <div key={idx} className={`col-md-4 ${styles["showcase-game"]}`}>
+                <Card data={showcaseFile} />
+              </div>
+            ))}
           </div>
         </div>
       </div>

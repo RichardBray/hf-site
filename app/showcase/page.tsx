@@ -1,11 +1,13 @@
 import { getAllFilesInFolder } from "services/fileService";
 import { getParsedFileContent } from "services/markdownService";
 import { FILE_PATHS } from "../constants";
-import type { ShowcasePagesProps } from "./Showcase";
+import type { ShowcasePagesProps } from "./types";
 import Showcase from "./Showcase";
 
 export async function getShowcaseProps() {
   const showcaseFiles = await getAllFilesInFolder(FILE_PATHS.showcase);
+  showcaseFiles.sort((a, b) => a.localeCompare(b));
+
   const showcaseFilesFrontMatter = showcaseFiles.map((showcaseFile) => {
     const { frontMatter } = getParsedFileContent(showcaseFile, FILE_PATHS.showcase, ".md");
     return frontMatter;

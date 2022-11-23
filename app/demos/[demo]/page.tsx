@@ -5,7 +5,7 @@ import { FILE_PATHS } from "$app/constants";
 
 import Demo from "./Demo";
 
-type DemoParams = { params: { demo: string } };
+import type { DemoParams } from "../types";
 
 export async function generateStaticParams() {
   const demoFiles = await getAllFilesInFolder(FILE_PATHS.demos);

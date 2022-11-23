@@ -31,6 +31,10 @@ export default function Target(props: { target: string; title: string; format: s
       width: 32,
       height: 40,
     },
+    ios: {
+      width: 40,
+      height: 32,
+    }
   };
 
   const imageProps = {
@@ -42,7 +46,7 @@ export default function Target(props: { target: string; title: string; format: s
 
   if (props.target) {
     return (
-      <a href={props.target} rel="noopener noreferrer" className="showcaseTarget" target="_blank">
+      <a href={props.target} rel="noopener noreferrer" target="_blank">
         <Image {...imageProps} />
       </a>
     );

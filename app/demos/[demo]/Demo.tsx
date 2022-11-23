@@ -5,12 +5,7 @@ import Image from "next/image";
 
 import styles from "$app/demos/styles.module.css";
 
-type DemoInputProps = {
-  frontMatter: Record<string, string>;
-  html: any;
-  prevDemo: string;
-  nextDemo: string;
-};
+import type { DemoInputProps } from "../types";
 
 export default function Demo({ frontMatter, html, prevDemo, nextDemo }: Partial<DemoInputProps>): JSX.Element {
   return (

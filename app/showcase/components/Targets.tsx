@@ -1,8 +1,8 @@
 import { formatTargetData } from "$services/dataService";
-import { ShowcaseData } from "../Showcase";
+import type { ShowcaseData } from "../types";
 import Target from "./Target";
 
-import styles from "../showcase.module.css";
+import styles from "../styles.module.css";
 
 export default function Targets(props: { data: ShowcaseData }) {
   const targets = formatTargetData(props.data);
@@ -10,7 +10,7 @@ export default function Targets(props: { data: ShowcaseData }) {
   return (
     <>
       {targets.map((target, idx) => (
-        <span key={idx} className={target.url ? styles["showcase-targets-active"] : styles["showcase-targets"]}>
+        <span key={idx} className={target.url ? styles["showcase-target-active"] : styles["showcase-target"]}>
           <Target target={target.url ?? ""} title={target.title} format={target.format!} />
         </span>
       ))}

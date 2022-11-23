@@ -1,4 +1,4 @@
-import { ShowcaseData } from "$app/showcase/Showcase";
+import { ShowcaseData } from "$app/showcase/types";
 
 type AllTargets = ["windows", "linux", "mac", "android", "ios", "flash", "steam", "ps4"?, "psvita"?, "xbox"?];
 type UnnecessaryKeys = ["layout", "title", "featured"];
