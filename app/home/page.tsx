@@ -157,7 +157,7 @@ const Home = () => (
       <section className={styles["home-sponsor-logos"]}>
         <p className={styles["lead-line-large"]}>Our platinum and gold sponsors:</p>
 
-        <div className={styles["sponsor-logos-container"]}>
+        <div className="sponsor-logos-container">
           <a className="platinum" href="http://www.defendersquest.com">
             <Image
               src="/images/sponsors/platinum/level-up-labs/lul_logo_circle.png"
