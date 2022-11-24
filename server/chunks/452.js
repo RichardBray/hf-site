@@ -171,7 +171,28 @@ const Home = ()=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.js
                             id: "twitter-follow-badge",
                             src: "https://platform.twitter.com/widgets.js"
                         }),
-                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {})
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("br", {}),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                            href: "https://discordapp.com/invite/rqEBAgF",
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                src: "https://img.shields.io/discord/162395145352904705.svg?logo=discord",
+                                alt: "Discord",
+                                width: "119",
+                                height: "20"
+                            })
+                        }),
+                        /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
+                            href: "https://www.patreon.com/haxeflixel",
+                            style: {
+                                marginLeft: "5px"
+                            },
+                            children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("img", {
+                                src: "https://img.shields.io/badge/donate-patreon-blue.svg",
+                                alt: "Patreon",
+                                width: "100",
+                                height: "20"
+                            })
+                        })
                     ]
                 }),
                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("hr", {}),
