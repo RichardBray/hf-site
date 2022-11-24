@@ -11,7 +11,7 @@ OpenFL ~~5~~ ~~6~~ ~~7~~ 8 support has been long-awaited. OpenFL 3.6.1 is still 
 - HTML5 support in OpenFL 8 is vastly improved. WebGL is now the default renderer, which also means - GLSL shaders by default:
 
   <br/>
-  <iframe class="html5-demo" src="/demos/html5/Filters" width="640" height="480"></iframe>
+  <iframe className="html5-demo" src="/demos/html5/Filters" width="640" height="480"></iframe>
   <br/>
 
   Check out the [demos page](/demos), we've updated all of them with OpenFL 8 builds so you can see the improvements in action.

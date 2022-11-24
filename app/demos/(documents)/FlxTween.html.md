@@ -9,7 +9,7 @@ HaxeFlixel has advanced tweening built in for interpolation over time.
 
 Tweens are a useful part of any framework and its applications are many. It can be game object movements, color changes and even tweening variables over time. The current tween types include:
 
-<ul class="columns-2">
+<ul className="columns-2">
 	<li>VarTween</li>
 	<li>MultiVarTween</li>
 	<li>AngleTween</li>
@@ -25,7 +25,7 @@ Tweens are a useful part of any framework and its applications are many. It can 
 
 There is also an impressive choice of Ease types for every Tween type to choose from:
 
-<ul class="columns-2">
+<ul className="columns-2">
 	<li>quadIn</li>
 	<li>quadOut</li>
 	<li>cubeIn</li>

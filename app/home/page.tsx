@@ -29,10 +29,6 @@ const HOMEPAGE_DEMOS = [
 
 const Home = () => (
   <>
-    {/* <Head>
-      <title>Beta | Home | HaxeFlixel 2D Game Engine</title>
-    </Head> */}
-
     <div className="container">
       <section className={`${styles["home-header"]} ${styles["home-section"]}`}>
         <Link href="documentation/about" className={styles["home-big-logo"]} title="About HaxeFlixel">
@@ -90,8 +86,8 @@ const Home = () => (
 
         <br />
 
-        {/* <a href="https://discordapp.com/invite/rqEBAgF">
-          <Image
+        <a href="https://discordapp.com/invite/rqEBAgF">
+          <img
             src="https://img.shields.io/discord/162395145352904705.svg?logo=discord"
             alt="Discord"
             width="119"
@@ -99,8 +95,8 @@ const Home = () => (
           />
         </a>
         <a href="https://www.patreon.com/haxeflixel" style={{ marginLeft: "5px" }}>
-          <Image src="https://img.shields.io/badge/donate-patreon-blue.svg" alt="Patreon" width="100" height="20" />
-        </a> */}
+          <img src="https://img.shields.io/badge/donate-patreon-blue.svg" alt="Patreon" width="100" height="20" />
+        </a>
       </section>
 
       <hr />

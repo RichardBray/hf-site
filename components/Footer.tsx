@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Script from "next/script";
 
 export default function Footer(): JSX.Element {
   return (
@@ -24,7 +23,6 @@ export default function Footer(): JSX.Element {
             >
               Follow @haxeflixel
             </a>
-            {/* <script async src="https://platform.twitter.com/widgets.js" /> */}
 
             <a
               className="footer-patreon"
