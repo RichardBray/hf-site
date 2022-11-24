@@ -16,7 +16,12 @@ Haxeflixel.com site
 
 ## Getting Started
 
-First, run the development server:
+First, install the dependencies
+```bash
+npm i
+```
+
+Then, run the development server:
 
 ```ash
 npm run dev
