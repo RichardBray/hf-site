@@ -3,7 +3,9 @@
   "/blog/page": "app/blog/page.js",
   "/demos/[demo]/page": "app/demos/[demo]/page.js",
   "/demos/page": "app/demos/page.js",
+  "/documentation/page": "app/documentation/page.js",
   "/home/page": "app/home/page.js",
   "/page": "app/page.js",
-  "/showcase/page": "app/showcase/page.js"
+  "/showcase/page": "app/showcase/page.js",
+  "/sponsors/page": "app/sponsors/page.js"
 }

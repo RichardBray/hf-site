@@ -3,7 +3,9 @@
   "/blog/page": "/blog",
   "/demos/[demo]/page": "/demos/[demo]",
   "/demos/page": "/demos",
+  "/documentation/page": "/documentation",
   "/home/page": "/home",
   "/page": "/",
-  "/showcase/page": "/showcase"
+  "/showcase/page": "/showcase",
+  "/sponsors/page": "/sponsors"
 }

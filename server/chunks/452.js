@@ -36,7 +36,6 @@ module.exports = {
 	"plus-sign": "styles_plus-sign__OWkJ2",
 	"patreon-home": "styles_patreon-home__hjPGj",
 	"backer-hr": "styles_backer-hr__4lX0u",
-	"sponsor-logos-container": "styles_sponsor-logos-container__LsTyN",
 	"home-sponsor-logos": "styles_home-sponsor-logos__ifTV_"
 };
 
@@ -354,7 +353,7 @@ const Home = ()=>/*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.js
                             children: "Our platinum and gold sponsors:"
                         }),
                         /*#__PURE__*/ (0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
-                            className: (_styles_module_css__WEBPACK_IMPORTED_MODULE_4___default()["sponsor-logos-container"]),
+                            className: "sponsor-logos-container",
                             children: [
                                 /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("a", {
                                     className: "platinum",
